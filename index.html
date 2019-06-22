@@ -95,7 +95,8 @@
       <button onclick="startTrialAction()">Start Trial</button>
         <script>
           function startTrialAction() {
-            fbq('track', 'StartTrial');
+            console.log('hello');
+            fbq('track', 'CompleteRegistration');
           }
         </script>
     </div>
@@ -168,6 +169,7 @@
         <button onclick="completeAction()">Submit</button>
           <script>
             function completeAction() {
+              console.log('hello');
               fbq('track', 'CompleteRegistration');
             }
           </script>
