@@ -165,15 +165,10 @@
           row="4">
         </textarea>
         <br>
-        <input
-          type="submit"
-          class="form-control submit"
-          value="SIGN UP">
+        <button id="completeRegistrationButton">Submit</button>
           <script type="text/javascript">
-            document.getElementById(submitButton).addEventListener('click', function() {
-              <script>
-                fbq('track', 'CompleteRegistration');
-              </script>
+            document.getElementById(completeRegistrationButton).addEventListener('click', function() {
+              fbq('track', 'CompleteRegistration');
             }, false);
           </script>
         </form>
