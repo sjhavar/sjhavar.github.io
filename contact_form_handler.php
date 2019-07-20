@@ -1,7 +1,7 @@
 <?php
- $name = $_POST['name'];
- $visitor_email = $_POST['email'];
- $message = $_POST['message'];
+ // $name = $_POST['name'];
+ // $visitor_email = $_POST['email'];
+ // $message = $_POST['message'];
 
  // $email_from = 'Easy'
  $email_from = 'surbhi.jhavar@gmail.com';
@@ -16,6 +16,10 @@ $to = "surbhi.jhavar@gmail.com";
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To": $visitor_email \r\n"
 
- mail($to, $email_subject, $email_body, $headers);
+ // mail($to, $email_subject, $email_body, $headers);
+
+$msg = "testing";
+// send email
+mail("surbhi.jhavar@gmail.com.com","My subject",$msg);
  echo 'success';
  ?>
