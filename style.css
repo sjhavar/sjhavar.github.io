@@ -19,15 +19,24 @@ html,body {
  color: #FFF;
 }
 
+#start-trial-link {
+  color: #fff;
+}
+
 #home {
-  background: url(images/joel_rope.jpg) no-repeat center center fixed;
+  background:
+    url(images/custom_fit.jpg) left center fixed no-repeat,
+    url(images/joel3.jpg) right center fixed no-repeat;
+
+
   display: table;
   height: 100%;
-  position: relative;
   width: 100%;
-  background-size: cover;
+  position: relative;
+  background-size: contain;
   padding: 0px;
-  margin-top: -20px;
+  /* margin-top: -20px; */
+  background-color: #1c1c1b;
   /* you can adjust adding here to move the image around */
 }
 
@@ -59,50 +68,69 @@ html,body {
 }
 
 #my-journey {
-  background: url(images/joel_full.jpg) no-repeat center center fixed;
   display: table;
-  height: 230px;
+  height: 100%;
   position: relative;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: auto;
-  padding: 25px;
-  opacity: 0.8;
-  /* you can adjust adding here to move the image around */
+  background: url(images/joel_hanging_opaque.png) center center no-repeat;
+  background-color: #1c1c1b;
+  background-size: contain;
 }
 
-.my-journey {
-  display: table-row;
-  color: white;
-  vertical-align: middle;
-  opacity: 1;
-}
 
 .my-journey-text {
-  margin-top: 40px;
-  opacity: 1;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
 }
+
+my-journey-body {
+  padding-top: 40px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+#container-form {
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background: url(images/five.jpeg) center center no-repeat;
+  background-color: #1c1c1b;
+  background-size: cover;
+  padding: 100px 100px 0px 100px;
+  color: white;
+}
+
+
+#my-clients {
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-color: #1c1c1b;
+  padding: 60px;
+}
+
 
 .img-fluid {
    width: 300px;
    height: 300px;
    padding: 0px 30px 30px;
 }
+
 .client {
   display: table-cell;
   text-align: center;
-}
-.welcome {
-  width: 75%;
-  /* margin: 0 auto; */
-  padding-top: 2rem;
-  padding-left: 200px;
+  border-radius: 50%;
+  line-height: 1.5;
+  color: white;
 }
 
 .welcome hr{
   border-top: 2px solid #b4b4b4;
-  /* width: 95%; */
   padding-top: 3rem;
   margin-bottom: 1rem;
 }
@@ -111,14 +139,9 @@ html,body {
   display: table-cell;
   text-align: center;
   margin-top: 100px;
-  /* color: #fff; */
   text-transform: uppercase;
   transition: all 4s ease-in-out;
 }
-/*
-.contact-title h2 {
-  font-size: 16px;
-} */
 
 .form-control {
   width: 600px;
@@ -145,17 +168,16 @@ form .submit {
 }
 
 form.submit:hover {
-  background-color: #f44336;
   cursor: pointer;
 }
-
 footer {
   width: 100%;
   background-color: black;
-  padding: 1% 5% 1% 5%;
+  padding: 1%;
   color: #FFF;
 }
 
 .icon {
   max-width: 200%;
 }
+

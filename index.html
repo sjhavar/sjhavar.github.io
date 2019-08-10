@@ -65,13 +65,14 @@
   <div id="home" class="container-fluid padding cover-page">
     <div class="landing-text">
       <h1>Custom Fit</h1>
-      <h3>Achieve the results you could only dream of</h3>
+      <h3>Fitness that is fitting</h3>
       <div class="start-trial-button">
         <button
+
           type="button"
           onclick="startTrialAction()"
           class="btn btn-primary btn-lg">
-          Start Trial
+          <a id="start-trial-link" href="#container-form">Start Trial</a>
         </button>
         <script>
           function startTrialAction() {
@@ -86,75 +87,73 @@
 
   <div id="my-journey" class="my-journey">
     <div class="container-fluid padding">
-      <div class="page-section-heading text-center text-uppercase text-white">
-        <h2 class="display-4">My Journey</h2>
-      </div>
-
-      <!--About Content -->
-      <div class="row my-journey-text">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">
-             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-             when an unknown printer took a galley of type and scrambled it to make a type
-             specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type
-              specimen book.
-          </p>
-        </div>
-
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type
-            specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-             when an unknown printer took a galley of type and scrambled it to make a type
-             specimen book.
-          </p>
-        </div>
-
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type
-            specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-             when an unknown printer took a galley of type and scrambled it to make a type
-             specimen book.
-          </p>
-        </div>
-
+      <div class="my-journey-text col-lg-4 ml-auto">
+        <div class="page-section-heading text-cent text-white">
+          <h2 class="display-4">MY JOURNEY</h2>
+        <div class="my-journey-body">
+            <p>
+              To me fitness is much more than weight lifting, calisthenics, and
+              cardio. With gains that surpass being pumped, ripped, and sweaty.
+              Fitness became my light, my rock, and salvation at a time when life
+              was dark, unstable, and chaotic. I grew up in a single parent home
+              of seven, in a crime stricken town in Boston where options were
+              limited and positive role models scarce. Scare became extinct once
+              the single parent home I grew up in became a zero parent home. I
+              lost my mother at the age of fifteen and with her went my desire to
+              live. In reverie I lost my mother way before she passed away on the
+              operating table. She was a type one diabetic with high blood
+              pressure and high cholesterol and the daily medication she was
+              prescribed slowly ate the life of her. It took a while for me to
+              come to terms with her death but once accepted I refused to succumb
+              to the same tragedy. That’s when fitness became my therapist and
+              the gym became that long comfortable sofa where I let it all out.
+              Everyone struggles and faces adversity at some point in life and
+              holding it in does much more harm than good. Fitness was how I
+              released that stress and I’m here to help others experience the
+              beauty I found through fitness.
+            </p>
+          </div>
       </div>
     </div>
   </div>
+</div>
 
     <!-- My Clients -->
     <div id="my-clients" class="container-fluid padding">
       <div class="container-fluid padding">
-        <div class="page-section-heading text-center text-uppercase text-white">
+        <div class="page-section-heading text-center text-white">
           <h2 class="display-4">My Clients</h2>
         </div>
 
           <div class="container-fluid padding">
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="client">
-                <img src="images/circle.png" class="img-fluid">
                 <p>
-                  "Some text should go here
+                  I started working with Joel a
+                   few months ago and within a
+                  couple sessions of working out with him, I've started to see
+                  changes in the mirror. He works me hard but in an encouraging
+                  and positive environment that gets myself to push myself harder
+                  with him and when I work out by myself. I've been really happy
+                  with my progress so far!
+
+                  - Sean Data Engineer
                 </p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="client">
-                <img src="images/circle.png" class="img-fluid">
                 <p>
-                  "Christna's text
-                </p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="client">
-                <img src="images/circle.png" class="img-fluid">
-                <p>
-                  "Some other text
+                  “Let’s just put it this way – a friend and I
+                  (both physically active business women) have separately been
+                  training with Joel for the past few months, and quickly came
+                  up with the hashtag #bodybyjoel. Endlessly creative with his
+                  (killer) workouts, Joel is also kind, patient (a quality I
+                  occasionally test …) and extremely reliable. I can’t count the
+                  number of people to whom I’ve passed on his number and praises.
+                  I would recommend Joel in a heartbeat.”
+
+                  - Vivian, Lawyer @ Asset Management Firm
                 </p>
               </div>
             </div>
@@ -166,13 +165,13 @@
     <div id="container-form" class="container-fluid text-center">
       <div class="contact-form-title page-section-heading text-center text-uppercase text-white">
         <h2 class="display-4">Sign Up</h2>
-        <div>Your first session is free!</div>
+        <div>Your first session is on me!</div>
       </div>
 
 
 
-    <div id="contact-form" class="contact-form">
-      <form id="contact-form" method="post" action="contact_form_handler.php">
+    <div class="contact-form-body">
+      <form id="contact-form" method="" action="">
         <input
           name="name"
           type="text"
@@ -187,14 +186,14 @@
           placeholder="Your Email"
           required>
         <br>
-        <textarea
+        <label> Tell us about your goals </label><textarea
           name="message"
           class="form-control"
           placeholder="What are your goals?"
           >
         </textarea>
         <br>
-        <button onclick="completeAction()">Submit</button>
+        <button class="btn btn-primary btn-lg" onclick="completeAction()">Submit</button>
           <script>
             function completeAction() {
               fbq('track', 'CompleteRegistration');
@@ -202,6 +201,7 @@
           </script>
       </form>
     </div>
+  </div>
       <!-- Footer -->
       <footer class="container-fluid text-center">
           <div class="column">
